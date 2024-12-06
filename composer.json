@@ -1,0 +1,66 @@
+{
+    "name": "basecodeoy/blade-icons-academicons",
+    "description": "A package to easily make use of Academicons with Laravel Blade Icons.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "BaseCode Oy",
+        "laravel",
+        "blade",
+        "blade-icons",
+        "blade-icons-academicons",
+        "academicons"
+    ],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/basecodeoy/blade-icons-academicons",
+    "support": {
+        "issues": "https://github.com/basecodeoy/blade-icons-academicons/issues",
+        "source": "https://github.com/basecodeoy/blade-icons-academicons",
+        "security": "https://github.com/basecodeoy/blade-icons-academicons/blob/main/.github/SECURITY.md"
+    },
+    "require": {
+        "php": "^8.3",
+        "basecodeoy/blade-icons": "^1.0.0",
+        "basecodeoy/crate": "^1.0",
+        "illuminate/contracts": "^11.33.2"
+    },
+    "require-dev": {
+        "basecodeoy/standards": "^1.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BaseCodeOy\\BladeIcons\\Academicons\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "infection/extension-installer": true,
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        },
+        "audit": {
+            "abandoned": "report"
+        },
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BaseCodeOy\\BladeIcons\\Academicons\\ServiceProvider"
+            ]
+        }
+    }
+}
